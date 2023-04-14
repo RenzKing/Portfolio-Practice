@@ -145,7 +145,7 @@ span {
   background: var(--second-bg-color);
 }
 
-about.img {
+.about img {
   width: 35vw;
 }
 
