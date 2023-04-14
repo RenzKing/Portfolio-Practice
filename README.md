@@ -1,4 +1,4 @@
-# Porfolio
+# Portfolio
 
 My Portfolio
-Testing Git for portfolio
+
