@@ -10,7 +10,7 @@ menuIcon.onclick = () => {
 //-----SCROLL SECTIONS ACTIVE LINK-----//
 let sections = document.querySelectorAll(`section`);
 
-let navLinks = document.querySelectorAll(`section`);
+let navLinks = document.querySelectorAll(`header nav a`);
 
 window.onscroll = () => {
   sections.forEach((sec) => {
@@ -74,9 +74,9 @@ ScrollReveal().reveal(
 //-----TYPED JS-----//
 
 const typed = new Typed(`.multiple-text`, {
-  strings: [`Frontend Developer`, `Digital Marketer`, `Sales Agent`],
-  typeSpeed: 50,
-  backSpeed: 100,
+  strings: [`Frontend Web Developer`],
+  typeSpeed: 100,
+  backSpeed: 30,
   backdelay: 1000,
   loop: true,
 });

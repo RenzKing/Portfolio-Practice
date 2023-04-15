@@ -32,6 +32,8 @@ section {
   padding: 10rem 9% 2rem;
 }
 
+/* HEADER SECTION */
+
 .header {
   position: fixed;
   top: 0;
@@ -71,6 +73,9 @@ section {
   color: var(--text-color);
   display: none;
 }
+
+/* HOME SECTION */
+
 .home {
   display: flex;
   justify-content: center;
@@ -154,6 +159,8 @@ span {
   background: var(--main-color);
 }
 
+/* ABOUT SECTION */
+
 .about {
   display: flex;
   justify-content: center;
@@ -162,7 +169,7 @@ span {
   background: var(--second-bg-color);
 }
 
-.about img {
+.about-img img {
   width: 35vw;
 }
 
@@ -183,6 +190,8 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+
+/* SERVICES SECTION */
 
 .services h2 {
   margin-bottom: 5rem;
@@ -224,6 +233,8 @@ span {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
+
+/* PORTFOLIO SECTION */
 
 .portfolio {
   background: var(--second-bg-color);
@@ -302,6 +313,8 @@ span {
   color: var(--second-bg-color);
 }
 
+/* CONTACT SECTION */
+
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -342,6 +355,8 @@ span {
   margin-top: 2rem;
   cursor: pointer;
 }
+
+/* FOOTER SECTION */
 
 .footer {
   display: flex;
