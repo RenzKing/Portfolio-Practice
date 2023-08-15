@@ -203,12 +203,13 @@ span {
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .services-container .services-box {
-  flex: 30rem;
+  flex: 20rem;
   background: var(--second-bg-color);
-  padding: 3rem 2rem 4rem;
+  padding: 3rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
