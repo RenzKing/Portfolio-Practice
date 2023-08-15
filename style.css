@@ -100,7 +100,7 @@ section {
 }
 
 .home-content h3 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -201,12 +201,12 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .services-container .services-box {
-  flex: 1 1 30rem;
+  flex: 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -216,6 +216,7 @@ span {
 }
 
 .services-box i {
+  margin-bottom: 20px;
   font-size: 7rem;
   color: var(--main-color);
 }
@@ -462,6 +463,12 @@ span {
   .home-content h1 {
     font-size: 5rem;
   }
+
+  .home-img {
+    width: 70vw;
+    height: 200px;
+  }
+
   .home-img img {
     width: 70vw;
     margin-top: 4rem;
@@ -507,13 +514,16 @@ span {
 
 @media (max-width: 450px) {
   .home-img img {
-    width: 90vw;
+    width: 70vw;
   }
 
   .about-img img {
-    width: 90vw;
+    width: 70vw;
   }
 
+  .services-container {
+    margin: 20px;
+  }
   .footer {
     flex-direction: column-reverse;
   }
