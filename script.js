@@ -80,3 +80,27 @@ const typed = new Typed(`.multiple-text`, {
   backdelay: 1000,
   loop: true,
 });
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("full-name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_8i7tb1y";
+  const templateID = "template_spptbx8";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("full-name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("mobile-number").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Your message was sent sucessfully!");
+    })
+
+    .catch((err) => console.log(err));
+}

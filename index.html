@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Renz King Gayacao Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="img/rg.png" />
 
     <!-- BOX ICONS -->
     <link
@@ -14,6 +15,16 @@
     />
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("lI4MNTVh1qE1YF1or");
+      })();
+    </script>
   </head>
 
   <body>
@@ -25,8 +36,8 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#tools">Tools</a>
+        <a href="#works">Works</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -44,12 +55,20 @@
         </p>
 
         <div class="social-media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/renz-king-gayacao" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+
+          <a href="https://www.github.com/renzking" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/renz-king-gayacao-a1017624b/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="img/RenzKingGayacaoCV.pdf" class="btn">Download CV</a>
       </div>
 
       <div class="home-img">
@@ -79,12 +98,14 @@
           dedication to everything I undertake, driven by my genuine enthusiasm
           for coding and the endless possibilities it holds
         </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="mailto:renzkinggayacaowork@gmail.com" class="btn"
+          >Let's Connect</a
+        >
       </div>
     </section>
 
-    <!--SERVICES SECTION DESIGN-->
-    <section class="services" id="services">
+    <!--TOOLS SECTION DESIGN-->
+    <section class="services" id="tools">
       <h2 class="heading">
         Web development tools <span><i class="bx bx-code-alt"></i></span>
       </h2>
@@ -124,9 +145,9 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO SECTION DESIGN-->
+    <!-- WORKS SECTION DESIGN-->
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="works">
       <h2 class="heading">My<span> Works</span></h2>
 
       <div class="portfolio-container">
@@ -157,42 +178,35 @@
           <div class="portfolio-layer">
             <h4>React JS / Tailwind CSS</h4>
 
+            <a href="https://www.renzgayacao.com/wip" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./img/rg.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Work in progress</h4>
+
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="https://placehold.co/600x400/png" alt="" />
+          <img src="./img/rg.png" alt="" />
           <div class="portfolio-layer">
             <h4>Work in progress</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
-              itaque.
-            </p>
+
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="https://placehold.co/600x400/png" alt="" />
+          <img src="./img/rg.png" alt="" />
           <div class="portfolio-layer">
             <h4>Work in progress</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
-              itaque.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
 
-        <div class="portfolio-box">
-          <img src="https://placehold.co/600x400/png" alt="" />
-          <div class="portfolio-layer">
-            <h4>Work in progress</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
-              itaque.
-            </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -203,23 +217,37 @@
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+      <form action="#" id="contact-form">
+        <div class="input-box form-group">
+          <input
+            type="text"
+            id="full-name"
+            class="form-control"
+            placeholder="Full Name"
+          />
+          <input type="email" id="email" placeholder="Email Address" />
         </div>
+
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="number" id="mobile-number" placeholder="Mobile Number" />
+          <input type="text" id="email-subject" placeholder="Email Subject" />
         </div>
+
         <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        >
+        </textarea>
+
+        <input
+          type="submit"
+          value="Send Message"
+          class="btn"
+          onclick="sendMail(); return flase;"
+        />
       </form>
     </section>
 
