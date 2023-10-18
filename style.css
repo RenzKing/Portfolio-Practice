@@ -503,9 +503,14 @@ span {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   html {
     font-size: 50%;
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
   .contact form .input-box input {
@@ -518,6 +523,10 @@ span {
     width: 70vw;
   }
 
+  .home-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
   .about-img img {
     width: 70vw;
   }
