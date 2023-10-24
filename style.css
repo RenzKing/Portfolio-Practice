@@ -28,7 +28,7 @@ body {
   color: var(--text-color);
 }
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 10rem 9% 2rem;
 }
 
@@ -409,13 +409,13 @@ span {
     padding: 10rem 3% 2rem;
   }
 
-  .services {
+  /* .services {
     padding-bottom: 7rem;
-  }
+  } */
 
-  .portfolio {
+  /* .portfolio {
     padding-bottom: 7rem;
-  }
+  } */
 
   .contact {
     min-height: auto;

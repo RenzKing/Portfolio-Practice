@@ -88,8 +88,10 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  emailjs
+  const serviceID = "service_8i7tb1y";
+  const templateID = "template_spptbx8";
 
+  emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
       document.getElementById("full-name").value = "";
